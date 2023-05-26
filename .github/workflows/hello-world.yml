@@ -1,0 +1,15 @@
+name: Workshop
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+    
+jobs:
+  hello_world:
+    runs-on: macos-latest
+    steps:
+      - name: Print Hello World
+        run: echo Hello World From MacOS
+  
